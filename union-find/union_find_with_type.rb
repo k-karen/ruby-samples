@@ -9,7 +9,7 @@ class UnionFindWithType
   def unite(id_x, id_y)
     x_parent = get_parent(id_x)
     y_parent = get_parent(id_y)
-    return if x_parent == y_parenta
+    return if x_parent == y_parent
     @types -= 1
     if @rank[x_parent] > @rank[y_parent]
       @parent[y_parent] = x_parent
